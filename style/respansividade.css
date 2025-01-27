@@ -1,0 +1,48 @@
+/*Respancividade*/
+@media (max-width: 700px) {
+  .nav-container {
+    padding: 0.5rem 0;
+  }
+
+  @media (max-width: 200px) {
+    .nav-links.ul {
+      padding: 0.5rem 0;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 4px #0000001a;
+    }
+
+    .nav-links a {
+      padding: 0.75rem 1rem;
+      width: 100%;
+      margin-top: 60px;
+      height: calc(100vh - 60px);
+    }
+
+    .nav-links a:hover {
+      background-color: #f0f7ff;
+    }
+
+    .hero {
+      margin-top: 60px;
+      height: calc(100vh - 60px);
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+}

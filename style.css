@@ -1,0 +1,205 @@
+/* Estilos do nav, hero, cards, map e footer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(252, 252, 252);
+}
+
+nav {
+  background-color: #0066cc;
+  padding: 0rem 0.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0px;
+}
+
+.hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("assets/imagens/Gás.webp");
+  animation: slide 5s infinite;
+  /* padding: 28px; */
+  text-align: center;
+}
+
+.hero-content {
+  position: absolute;
+  margin: 1vh;
+  z-index: 1;
+}
+
+/*Slide dos backgrouds*/
+@keyframes slide {
+  50% {
+    background-image: url(assets/imagens/Product.webp);
+  }
+  80% {
+    background-image: url(assets/imagens/Products.webp);
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hero p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.cards {
+  padding: 0.5rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #0000001a;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  text-shadow: 1px 1px 2px #000000;
+  margin-bottom: 1rem;
+  color: #0066cc;
+}
+
+.card p {
+  color: #262626;
+  text-shadow: 1px 1px 2px #000000;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000000;
+  margin-bottom: 1rem;
+  color: #0066cc;
+}
+
+.map-container {
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #000000;
+  margin-bottom: 1rem;
+  color: #0066cc;
+}
+
+.map-container h2 {
+  padding-bottom: 15px;
+}
+
+.info-container {
+  text-align: center;
+}
+
+footer {
+  position: initial;
+  background-color: #0066cc;
+  padding: 0rem 0.5rem;
+  width: 100%;
+  top: 0;
+  color: white;
+  margin-top: 15px;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-contact a {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  padding-bottom: 15px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
