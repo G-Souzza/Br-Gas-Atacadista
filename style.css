@@ -203,3 +203,7 @@ footer {
   font-size: 0.8rem;
   color: #ffffff;
 }
+
+.footer-bottom a {
+  color: #000000;
+}
